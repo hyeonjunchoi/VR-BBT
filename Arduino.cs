@@ -1,3 +1,6 @@
+//https://you-rang.tistory.com/214
+//https://www.notion.so/koreandude/Unity-VR-GAME-development-for-Oculus-Quest-2-75ed243a2a7a4c22936f491d2df523fc
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +17,7 @@ public class Arduino : MonoBehaviour
         COM13, COM14, COM15, COM16
     }
 
-    //¿¬°áµÈ Æ÷Æ®, baud rate(Åë½Å¼Óµµ)
+    //ì—°ê²°ëœ í¬íŠ¸, baud rate(í†µì‹ ì†ë„)
     private SerialPort stream;
 
     [SerializeField]
@@ -45,11 +48,11 @@ public class Arduino : MonoBehaviour
                 Debug.Log(e);
                 throw;
             }
-            Debug.Log("¿¬°áµÊ");
+            Debug.Log("ì—°ê²°ë¨");
         }
         else if (!stream.IsOpen)
         {
-            Debug.Log("¿¬°á¾ÈµÊ");
+            Debug.Log("ì—°ê²°ì•ˆë¨");
             stream.Open();
         }
     }
